@@ -41,12 +41,10 @@ function update(){
             for(let index in csv[row][1]){
                 if(csv[row][1][index] == inCurrent[character]){
                     if(outNew[character] === undefined){
-                        /* Return blank behavior disabling
                         outNew[character] = [];
-                        */
-                        outNew[character] += '_';
                         outNew[character].push(csv[row][0]);
                         outString += csv[row][0];
+                        outString += '_';
                     }else if(!outNew[character].includes(csv[row][0])){
                         outNew[character].push(csv[row][0]);
                         outString += ', ' + csv[row][0];
