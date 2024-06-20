@@ -34,7 +34,7 @@ function update(){
     let outNew = [];
     let outString = '';
     for(let character in inCurrent){
-        outString += '(';
+ //       outString += '(';
         for(let row in csv){
             for(let index in csv[row][1]){
                 if(csv[row][1][index] == inCurrent[character]){
@@ -49,7 +49,7 @@ function update(){
                 }
             }
         }
-        outString += ')';
+//        outString += ')';
     }
     console.log(inputField, outNew);
     output.innerText = outString;
