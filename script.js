@@ -42,7 +42,6 @@ function update(){
                         outNew[character] = [];
                         outNew[character].push(csv[row][0]);
                         outString += csv[row][0];
-                        outString += '_';
                     }else if(!outNew[character].includes(csv[row][0])){
                         outNew[character].push(csv[row][0]);
                         outString += ', ' + csv[row][0];
